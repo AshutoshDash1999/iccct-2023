@@ -1,3 +1,9 @@
+# ICCCT 2023
+
+### How to run
+1. Install node
+2. Go to the project directory and type the command `npm i` and hit `Enter`
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
