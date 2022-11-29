@@ -1,17 +1,20 @@
-import { Box, Center,Text,Link,Divider } from "@chakra-ui/react";
+import { Box, Center, Text, Link, Divider } from "@chakra-ui/react";
 
 function Footer() {
   return (
     <Box>
-      <Center pt='150px'>
-      <Divider  pt={10} />
+      <Center pt="150px">
+        <Divider pt={10} />
       </Center>
-      <Center bg="white.200"  position="relative" bottom="0" pt={1} >
-         <Link pt={5}><Text as='u' color='blue' fontSize='xs'>Code of Conduct</Text></Link>
-         
+      <Center bg="white.200" position="relative" bottom="0" pt={1}>
+        <Link pt={5}>
+          <Text as="u" color="blue" fontSize="xs">
+            Code of Conduct
+          </Text>
+        </Link>
       </Center>
       <Center>
-      <Text>© IEEEVR Conference</Text>
+        <Text>© ICCCT 2023</Text>
       </Center>
     </Box>
   );
