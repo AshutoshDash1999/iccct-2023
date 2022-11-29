@@ -29,8 +29,8 @@ const BaseLayout: NextPage<Props> = ({ children }) => {
         <Navbar />
         <Hero />
         <Grid templateColumns="repeat(8, 1fr)" gap={4} mt="4">
-          <GridItem colSpan={6} w="100%" h="10" bg="blue.500" height="200vh">
-            <Box p="2">{children}</Box>
+          <GridItem colSpan={6} w="100%" height="150vh">
+            <Box p="4">{children}</Box>
           </GridItem>
           <GridItem colSpan={2} w="100%" h="10">
             <VStack spacing={4}>
