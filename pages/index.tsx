@@ -1,4 +1,4 @@
-import { Box, Center } from "@chakra-ui/react";
+import { Box, Heading,Text  } from "@chakra-ui/react";
 import Head from "next/head";
 import BaseLayout from "../components/BaseLayout";
 
@@ -12,7 +12,9 @@ export default function Home() {
       </Head>
       <main>
         <BaseLayout>
-          <Box>hello</Box>
+          {/* write from here */}
+          <Heading>I&apos; m a Heading</Heading>
+          <Text fontSize=''>(3xl) In love with React & Next</Text>
         </BaseLayout>
       </main>
     </div>
