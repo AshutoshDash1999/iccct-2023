@@ -7,10 +7,10 @@ function Navbar() {
     <Flex p="4">
       <HStack gap="4">
         <Link href="/">
-          <Button variant="ghost" colorScheme="blue" color="black">ICCCT</Button>
+          <Button variant="ghost" _hover={{background:"blue.100"}} colorScheme="blue" color="black">ICCCT</Button>
         </Link>
         <Link href="/about">
-          <Button variant="ghost" colorScheme="blue" color="black">About</Button>
+          <Button variant="ghost" _hover={{background:"blue.100"}} colorScheme="blue" color="black">About</Button>
         </Link>
         <NavLinkButton
           MenuName="Attend"

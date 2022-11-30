@@ -51,7 +51,7 @@ const BaseLayout: NextPage<Props> = ({ children }) => {
               <Box>
                 <Image
                   src="https://via.placeholder.com/250"
-                  alt="Dan Abramov"
+                  alt="sponsors"
                 />
               </Box>
               <Heading
@@ -66,7 +66,7 @@ const BaseLayout: NextPage<Props> = ({ children }) => {
               <Box>
                 <Image
                   src="https://via.placeholder.com/250"
-                  alt="Dan Abramov"
+                  alt="sponsors"
                 />
               </Box>
               <Heading
@@ -81,7 +81,7 @@ const BaseLayout: NextPage<Props> = ({ children }) => {
               <Box>
                 <Image
                   src="https://via.placeholder.com/250"
-                  alt="Dan Abramov"
+                  alt="sponsors"
                 />
               </Box>
             </VStack>
