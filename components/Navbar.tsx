@@ -106,55 +106,9 @@ function Navbar() {
             },
           ]}
         />
-        <NavLinkButton
-          MenuName="Contribute"
-          MenuItems={[
-            {
-              MenuItemName: "Call for Exhibitors and Sponsors",
-              href: "callforexhibitorsandsponsors",
-            },
-            {
-              MenuItemName: "Call for Journal Papers",
-              href: "callforjournalpapers",
-            },
-            {
-              MenuItemName: "Call for Conference Papers",
-              href: "callforconferencepapers",
-            },
-            {
-              MenuItemName: "Call for Posters",
-              href: "callforposters",
-            },
-            {
-              MenuItemName: "Call for Workshops",
-              href: "callforworkshops",
-            },
-            {
-              MenuItemName: "Call for 3DUI Contest Entries",
-              href: "callfor3duicontestentries",
-            },
-            {
-              MenuItemName: "Call for Research Demos",
-              href: "callforresearchdemos",
-            },
-            {
-              MenuItemName: "Call for Doctoral Consortium",
-              href: "callfordoctoralconsortium",
-            },
-            {
-              MenuItemName: "Call for Tutorials",
-              href: "callfortutorials",
-            },
-            {
-              MenuItemName: "Call for Workshop Papers",
-              href: "callforworkshoppapers",
-            },
-            {
-              MenuItemName: "Call for Student Volunteers",
-              href: "callforstudentvolunteers",
-            },
-          ]}
-        />
+         <Link href="/callForPapers">
+          <Button variant="ghost" _hover={{background:"blue.100"}} colorScheme="blue" color="black">Call for Papers</Button>
+        </Link>
         <NavLinkButton
           MenuName="Awards"
           MenuItems={[

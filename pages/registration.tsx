@@ -1,10 +1,10 @@
 import BaseLayout from "../components/BaseLayout"
 
-function About() {
+function Registration() {
   return (
     <BaseLayout>
     {/* write from here */}
     </BaseLayout>
   )
 }
-export default About
+export default Registration
