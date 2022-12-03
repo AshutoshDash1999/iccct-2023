@@ -127,19 +127,19 @@ function Navbar() {
           MenuItems={[
             {
               MenuItemName: "Conference Committee",
-              href: "conferenceCommittee",
+              href: "/committee/conferenceCommittee",
             },
             {
               MenuItemName: "Advisory Committee",
-              href: "advisoryCommittee",
+              href: "/committee/advisoryCommittee",
             },
             {
               MenuItemName: "Program Committee",
-              href: "programCommittee",
+              href: "/committee/programCommittee",
             },
             {
               MenuItemName: "International Advisory Committee",
-              href: "internationalAdvisoryCommittee",
+              href: "/committee/internationalAdvisoryCommittee",
             },
           ]}
         />
