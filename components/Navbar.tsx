@@ -17,39 +17,39 @@ function Navbar() {
           MenuItems={[
             {
               MenuItemName: "Code of Conduct",
-              href: "codeofconduct",
+              href: "/codeofconduct",
             },
             {
               MenuItemName: "Why Attend",
-              href: "whyattend",
+              href: "/whyattend",
             },
             {
               MenuItemName: "Registration",
-              href: "registration",
+              href: "/registration",
             },
             {
               MenuItemName: "Satellite Events",
-              href: "satelliteevents",
+              href: "/satelliteevents",
             },
             {
               MenuItemName: "Diversity and Inclusion Scholarship",
-              href: "diversityandinclusionscholarship",
+              href: "/diversityandinclusionscholarship",
             },
             {
               MenuItemName: "Bridge to VR",
-              href: "bridgetovr",
+              href: "/bridgetovr",
             },
             {
               MenuItemName: "Mentorship Program",
-              href: "mentorshipprogram",
+              href: "/mentorshipprogram",
             },
             {
               MenuItemName: "Virbela Instructions",
-              href: "virbelainstructions",
+              href: "/virbelainstructions",
             },
             {
               MenuItemName: "Zoom Instructions",
-              href: "zoominstructions",
+              href: "/zoominstructions",
             },
           ]}
         />
