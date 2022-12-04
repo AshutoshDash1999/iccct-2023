@@ -31,9 +31,9 @@ function InternationalAdvisoryCommittee() {
       </Heading>
       <Box w="50%" h="5px" bgGradient="linear(to-r, pink.500, orange.500)" />
 
-      <TableContainer>
+      <TableContainer mt={10} rounded="lg" shadow={"md"} p="4">
         <Table variant="simple">
-          <Thead>
+          <Thead borderBottom="2px" borderColor="gray.200">
             <Tr>
               <Th>SL.NO</Th>
               <Th>Name</Th>
