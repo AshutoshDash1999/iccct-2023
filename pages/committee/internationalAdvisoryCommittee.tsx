@@ -26,7 +26,7 @@ function InternationalAdvisoryCommittee() {
   return (
     <BaseLayout>
       {/* write from here */}
-      <Heading as="h3" size="lg">
+      <Heading as="h2" size="xl">
         International Advisory Committee
       </Heading>
       <Box w="50%" h="5px" bgGradient="linear(to-r, pink.500, orange.500)" />

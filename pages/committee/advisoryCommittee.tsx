@@ -26,7 +26,7 @@ function AdvisoryCommittee() {
   return (
     <BaseLayout>
       {/* write from here */}
-      <Heading as="h3" size="lg">
+      <Heading as="h2" size="xl">
         Advisory Committee
       </Heading>
     
