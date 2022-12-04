@@ -22,6 +22,41 @@ import {
 } from "@chakra-ui/react";
 import BaseLayout from "../../components/BaseLayout";
 
+const advisoryCommitteeData = [
+  {
+    name: "Prof. S. Behera",
+    department: "Electrical and Instrumentation Engineer",
+  },
+  {
+    name: "Prof. A.Barisal",
+    department: "Electrical Engineering",
+  },
+  {
+    name: "Prof. D. P. Satpathy",
+    department: "Civil Engineering",
+  },
+  {
+    name: "Prof. R. Mallick",
+    department: "Mechanical Engineering",
+  },
+  {
+    name: "Prof.R.K.Pradhan",
+    department: "Biotechnology",
+  },
+  {
+    name: "Prof.A.K.Dash",
+    department: "Fashion Technology",
+  },
+  {
+    name: "Prof. B.P.Dash",
+    department: "Textile Engineering",
+  },
+  {
+    name: "Prof. A.N.Acharya",
+    department: "Chemistry",
+  },
+];
+
 function AdvisoryCommittee() {
   return (
     <BaseLayout>
@@ -29,7 +64,6 @@ function AdvisoryCommittee() {
       <Heading as="h2" size="xl">
         Advisory Committee
       </Heading>
-    
 
       <TableContainer mt={10} rounded="lg" shadow={"md"} p="4">
         <Table variant="simple">
@@ -41,46 +75,15 @@ function AdvisoryCommittee() {
             </Tr>
           </Thead>
           <Tbody>
-            <Tr>
-              <Td>1</Td>
-              <Td>Prof. S. Behera</Td>
-              <Td> Electrical and Instrumentation Engineer</Td>
-            </Tr>
-            <Tr>
-              <Td>2</Td>
-              <Td>Prof. A.Barisal</Td>
-              <Td>Electrical Engineering</Td>
-            </Tr>
-            <Tr>
-              <Td>3</Td>
-              <Td>Prof. D. P. Satpathy</Td>
-              <Td>Civil Engineering</Td>
-            </Tr>
-            <Tr>
-              <Td>4</Td>
-              <Td>Prof. R. Mallick</Td>
-              <Td>Mechanical Engineering</Td>
-            </Tr>
-            <Tr>
-              <Td>5</Td>
-              <Td>Prof.R.K.Pradhan</Td>
-              <Td>Biotechnology</Td>
-            </Tr>
-            <Tr>
-              <Td>6</Td>
-              <Td>Prof.A.K.Dash</Td>
-              <Td>Fashion Technology</Td>
-            </Tr>
-            <Tr>
-              <Td>7</Td>
-              <Td>Prof. B.P.Dash</Td>
-              <Td>Textile Engineering</Td>
-            </Tr>
-            <Tr>
-              <Td>8</Td>
-              <Td>Prof. A.N.Acharya</Td>
-              <Td>Chemistry</Td>
-            </Tr>
+            {advisoryCommitteeData.map((item, index) => {
+              return (
+                <Tr key={item.name}>
+                  <Td>{index + 1}</Td>
+                  <Td>{item.name}</Td>
+                  <Td>{item.department}</Td>
+                </Tr>
+              );
+            })}
           </Tbody>
         </Table>
       </TableContainer>
