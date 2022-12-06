@@ -6,7 +6,6 @@ import { Nunito } from "@next/font/google";
 const nunito = Nunito({weight: ['400', '700'], subsets: ["latin"] });
 
 export default function App({ Component, pageProps }: AppProps) {
-  console.log(nunito);
   return (
     <main className={nunito.className}>
       <style jsx global>{`
