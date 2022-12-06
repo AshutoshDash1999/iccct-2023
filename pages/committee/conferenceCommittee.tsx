@@ -1,29 +1,16 @@
 import {
-  List,
+  Box,
+  Heading,
   ListItem,
-  ListIcon,
-  OrderedList,
   UnorderedList,
   VStack,
   StackDivider,
-} from "@chakra-ui/react";
-import {
-  Box,
-  Button,
-  Heading,
-  Text,
-  Input,
-  InputGroup,
-  ButtonGroup,
-  InputRightElement,
-  Divider,
 } from "@chakra-ui/react";
 import BaseLayout from "../../components/BaseLayout";
 
 function ConferenceCommittee() {
   return (
     <BaseLayout>
-      {/* write from here */}
       <Heading as="h2" size="xl" mb={8}>
         Conference Committee
       </Heading>

@@ -1,24 +1,12 @@
 import {
+  Heading,
   Table,
   Thead,
   Tbody,
-  Tfoot,
   Tr,
   Th,
   Td,
-  TableCaption,
   TableContainer,
-} from "@chakra-ui/react";
-import {
-  Box,
-  Button,
-  Heading,
-  Text,
-  Input,
-  InputGroup,
-  ButtonGroup,
-  InputRightElement,
-  Divider,
 } from "@chakra-ui/react";
 import BaseLayout from "../../components/BaseLayout";
 
