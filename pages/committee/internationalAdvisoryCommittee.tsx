@@ -18,7 +18,6 @@ function InternationalAdvisoryCommittee() {
       <Heading as="h2" size="xl">
         International Advisory Committee
       </Heading>
-      <Box w="50%" h="5px" bgGradient="linear(to-r, pink.500, orange.500)" />
 
       <TableContainer mt={10} rounded="lg" shadow={"md"} p="4">
         <Table variant="simple">
