@@ -11,6 +11,44 @@ import {
 } from "@chakra-ui/react";
 import BaseLayout from "../../components/BaseLayout";
 
+const iaCommitteeData = [
+  {
+    name: "Prof. P. V. Sudha",
+    university: "Osmania University",
+    country: "India",
+  },
+  {
+    name: "Prof. Joy Iong Zong Chen",
+    university: "Da- Yeh University",
+    country: "Taiwan",
+  },
+  {
+    name: "Prof. A K Verma",
+    university: "Western Norway University",
+    country: "Norway",
+  },
+  {
+    name: "Prof. Dan Simon",
+    university: "Cleveland State University",
+    country: "USA",
+  },
+  {
+    name: "Prof. Atulya K. Nagar",
+    university: "Liverpool Hope University",
+    country: "UK",
+  },
+  {
+    name: "Dr. Wang Haoxiang",
+    university: "Cornell University",
+    country: "USA",
+  },
+  {
+    name: "Dr. Anuradha Ranasinghe",
+    university: "Liverpool Hope University",
+    country: "UK",
+  },
+];
+
 function InternationalAdvisoryCommittee() {
   return (
     <BaseLayout>
@@ -19,7 +57,7 @@ function InternationalAdvisoryCommittee() {
         International Advisory Committee
       </Heading>
 
-      <TableContainer mt={10} rounded="lg" shadow={"md"} p="4">
+      <TableContainer bg="blue.50" mt={10} rounded="lg" shadow={"md"} p="4">
         <Table variant="simple">
           <Thead borderBottom="2px" borderColor="gray.200">
             <Tr>
@@ -30,48 +68,14 @@ function InternationalAdvisoryCommittee() {
             </Tr>
           </Thead>
           <Tbody>
-            <Tr>
-              <Td>1</Td>
-              <Td>Prof. P. V. Sudha</Td>
-              <Td>Osmania University</Td>
-              <Td>India</Td>
-            </Tr>
-            <Tr>
-              <Td>2</Td>
-              <Td>Prof. Joy Iong Zong Chen</Td>
-              <Td>Da- Yeh University</Td>
-              <Td>Taiwan</Td>
-            </Tr>
-            <Tr>
-              <Td>3</Td>
-              <Td>Prof. A K Verma</Td>
-              <Td>Western Norway University</Td>
-              <Td>Norway</Td>
-            </Tr>
-            <Tr>
-              <Td>4</Td>
-              <Td>Prof. Dan Simon</Td>
-              <Td>Cleveland State University</Td>
-              <Td>USA</Td>
-            </Tr>
-            <Tr>
-              <Td>5</Td>
-              <Td>Prof. Atulya K. Nagar</Td>
-              <Td>Liverpool Hope University</Td>
-              <Td>UK</Td>
-            </Tr>
-            <Tr>
-              <Td>6</Td>
-              <Td>Dr. Wang Haoxiang</Td>
-              <Td>Cornell University</Td>
-              <Td>USA</Td>
-            </Tr>
-            <Tr>
-              <Td>7</Td>
-              <Td>Dr. Anuradha Ranasinghe</Td>
-              <Td>Liverpool Hope University</Td>
-              <Td>UK</Td>
-            </Tr>
+            {iaCommitteeData.map((item, index) => (
+              <Tr key={index}>
+                <Td>{index+1}</Td>
+                <Td>{item.name}</Td>
+                <Td>{item.university}</Td>
+                <Td>{item.country}</Td>
+              </Tr>
+            ))}
           </Tbody>
         </Table>
       </TableContainer>

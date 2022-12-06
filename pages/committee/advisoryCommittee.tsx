@@ -53,7 +53,7 @@ function AdvisoryCommittee() {
         Advisory Committee
       </Heading>
 
-      <TableContainer mt={10} rounded="lg" shadow={"md"} p="4">
+      <TableContainer bg="blue.50" mt={10} rounded="lg" shadow={"md"} p="4">
         <Table variant="simple">
           <Thead borderBottom="2px" borderColor="gray.200">
             <Tr>
