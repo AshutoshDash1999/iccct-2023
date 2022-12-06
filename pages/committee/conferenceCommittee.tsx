@@ -1,70 +1,93 @@
 import {
   Box,
-  Card,
-  CardBody,
-  CardHeader,
   Heading,
-  Stack,
+  ListItem,
+  UnorderedList,
+  VStack,
   StackDivider,
-  Text,
 } from "@chakra-ui/react";
 import BaseLayout from "../../components/BaseLayout";
 
 function ConferenceCommittee() {
   return (
     <BaseLayout>
-      <Heading>Conference Committees</Heading>
-      <Card>
-        <CardHeader></CardHeader>
-
-        <CardBody>
-          <Stack divider={<StackDivider />} spacing="4">
-            <Box>
-              <Heading size="md" textTransform="uppercase">
-                Patron
-              </Heading>
-              <Text pt="2" fontSize="md">
-                Dr. Prashanta Kumar Patra , OSD, OUTR, Bhubaneswar
-              </Text>
-            </Box>
-            <Box>
-              <Heading size="md" textTransform="uppercase">
-                Convener
-              </Heading>
-              <Text pt="2" fontSize="md">
-                Dr.Jibitesh Mishra, Professor & HOD, Department of CSA, OUTR,
-                Bhubaneswar
-              </Text>
-            </Box>
-
-            <Box>
-              <Heading size="md" textTransform="uppercase">
-                Finance Chair
-              </Heading>
-              <Text pt="2" fontSize="md">
-                Finance Chair
-              </Text>
-            </Box>
-            <Box>
-              <Heading size="md" textTransform="uppercase">
-                General Chair
-              </Heading>
-              <Text pt="2" fontSize="md">
-                Prof. Bijaya Ketan Panigrahi, IIT, Delhi
-              </Text>
-            </Box>
-            <Box>
-              <Heading size="md" textTransform="uppercase">
-                Publicity Chair
-              </Heading>
-              <Text pt="2" fontSize="md">
-                Prof. Bijaya Ketan Panigrahi, IIT,Delhi Dr.Subhasis Mahapatra,
-                HOD, Department of CSE, OUTR, Bhubaneswar
-              </Text>
-            </Box>
-          </Stack>
-        </CardBody>
-      </Card>
+      <Heading as="h2" size="xl" mb={8}>
+        Conference Committee
+      </Heading>
+      <VStack
+        align="stretch"
+        divider={<StackDivider borderColor="gray.200" />}
+        spacing={4}
+      >
+        <Box>
+          <Heading as="h3" size="lg">
+            Patron
+          </Heading>
+          <UnorderedList>
+            <ListItem>
+              Dr. Prashanta Kumar Patra , OSD, OUTR, Bhubaneswar
+            </ListItem>
+          </UnorderedList>
+        </Box>
+        <Box>
+          <Heading as="h3" size="lg">
+            Convener
+          </Heading>
+          <UnorderedList>
+            <ListItem>
+              Dr.Jibitesh Mishra, Professor & HOD, Department of CSA, OUTR,
+              Bhubaneswar
+            </ListItem>
+          </UnorderedList>
+        </Box>
+        <Box>
+          <Heading as="h3" size="lg">
+            Organising Chair
+          </Heading>
+          <UnorderedList>
+            <ListItem>
+              Dr.Jibitesh Mishra, Professor & HOD, Department of CSA, OUTR,
+              Bhubaneswar
+            </ListItem>
+            <ListItem>
+              Dr.Ranjan Kumar Dash, Professor & HOD, Department of IT, OUTR,
+              Bhubaneswar
+            </ListItem>
+            <ListItem>
+              Prof. Tapas Kumar Patra , Dept. of E&IE , OUTR,Bhubanewar
+            </ListItem>
+          </UnorderedList>
+        </Box>
+        <Box>
+          <Heading as="h3" size="lg">
+            Finance Chair
+          </Heading>
+          <UnorderedList>
+            <ListItem>
+              Prof. Tapas Kumar Patra , Dept. of E&IE , OUTR,Bhubanewa
+            </ListItem>
+          </UnorderedList>
+        </Box>
+        <Box>
+          <Heading as="h3" size="lg">
+            General Chair
+          </Heading>
+          <UnorderedList>
+            <ListItem>Prof. Bijaya Ketan Panigrahi, IIT, Delhi</ListItem>
+          </UnorderedList>
+        </Box>
+        <Box>
+          <Heading as="h3" size="lg">
+            Publicity Chair
+          </Heading>
+          <UnorderedList>
+            <ListItem>Prof. Bijaya Ketan Panigrahi, IIT,Delhi</ListItem>
+            <ListItem>
+              Dr.Subhasis Mahapatra, HOD, Department of CSE, OUTR, Bhubaneswar
+            </ListItem>
+          </UnorderedList>
+        </Box>
+      </VStack>
     </BaseLayout>
   );
 }
