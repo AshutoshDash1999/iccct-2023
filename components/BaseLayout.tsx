@@ -29,10 +29,12 @@ const BaseLayout: NextPage<Props> = ({ children }) => {
         <Navbar />
         <Hero />
         <Grid templateColumns="repeat(8, 1fr)" gap={4} mt="4">
-          <GridItem colSpan={6} w="100%" height="150vh">
+          <GridItem colSpan={6} w="100%">
             <Box p="4">{children}</Box>
           </GridItem>
-          <GridItem colSpan={2} w="100%" h="10">
+          
+          <GridItem colSpan={2} w="100%">
+            {/* brand  */}
             <VStack spacing={4}>
               <Heading as="h3" size="lg">
                 Sponsors
