@@ -2,19 +2,17 @@ import {
   Box,
   Center,
   Text,
-  Link,
   Divider,
   Flex,
   Spacer,
   Heading,
-  Stack,
-  HStack,
   VStack,
 } from "@chakra-ui/react";
 
 function Footer() {
   return (
-    <Box>
+    <Box mt="2">
+      <Divider/>
       <Flex p="4">
         <Box>
           <Heading as="h2" size="sm">
