@@ -6,6 +6,7 @@ import {
   Heading,
   Image,
   VStack,
+  useMediaQuery,
 } from "@chakra-ui/react";
 import Footer from "./Footer";
 import Hero from "./Hero";
@@ -18,6 +19,8 @@ interface Props {
 }
 
 const BaseLayout: NextPage<Props> = ({ children }) => {
+  const [isMobile] = useMediaQuery("(max-width: 768px)");
+
   return (
     <Box p="2" mx="4">
       <Head>
@@ -28,13 +31,9 @@ const BaseLayout: NextPage<Props> = ({ children }) => {
       <main>
         <Navbar />
         <Hero />
-        <Grid templateColumns="repeat(8, 1fr)" gap={4} mt="4">
-          <GridItem colSpan={6} w="100%">
+        {isMobile ? (
+          <Box>
             <Box p="4">{children}</Box>
-          </GridItem>
-          
-          <GridItem colSpan={2} w="100%">
-            {/* brand  */}
             <VStack spacing={4}>
               <Heading as="h3" size="lg">
                 Sponsors
@@ -51,10 +50,7 @@ const BaseLayout: NextPage<Props> = ({ children }) => {
               </Heading>
 
               <Box>
-                <Image
-                  src="https://via.placeholder.com/250"
-                  alt="sponsors"
-                />
+                <Image src="https://via.placeholder.com/250" alt="sponsors" />
               </Box>
               <Heading
                 as="h5"
@@ -66,10 +62,7 @@ const BaseLayout: NextPage<Props> = ({ children }) => {
                 Gold Sponsors
               </Heading>
               <Box>
-                <Image
-                  src="https://via.placeholder.com/250"
-                  alt="sponsors"
-                />
+                <Image src="https://via.placeholder.com/250" alt="sponsors" />
               </Box>
               <Heading
                 as="h5"
@@ -81,14 +74,64 @@ const BaseLayout: NextPage<Props> = ({ children }) => {
                 Silver Sponsors
               </Heading>
               <Box>
-                <Image
-                  src="https://via.placeholder.com/250"
-                  alt="sponsors"
-                />
+                <Image src="https://via.placeholder.com/250" alt="sponsors" />
               </Box>
             </VStack>
-          </GridItem>
-        </Grid>
+          </Box>
+        ) : (
+          <Grid templateColumns="repeat(8, 1fr)" gap={4} mt="4">
+            <GridItem colSpan={6} w="100%">
+              <Box p="4">{children}</Box>
+            </GridItem>
+
+            <GridItem colSpan={2} w="100%">
+              {/* brand  */}
+              <VStack spacing={4}>
+                <Heading as="h3" size="lg">
+                  Sponsors
+                </Heading>
+                <Divider border="4px" borderRadius="lg" borderColor="black" />
+                <Heading
+                  as="h5"
+                  size="md"
+                  background="blue.300"
+                  rounded="lg"
+                  p="2"
+                >
+                  Diamond Sponsors
+                </Heading>
+
+                <Box>
+                  <Image src="https://via.placeholder.com/250" alt="sponsors" />
+                </Box>
+                <Heading
+                  as="h5"
+                  size="md"
+                  background="blue.300"
+                  rounded="lg"
+                  p="2"
+                >
+                  Gold Sponsors
+                </Heading>
+                <Box>
+                  <Image src="https://via.placeholder.com/250" alt="sponsors" />
+                </Box>
+                <Heading
+                  as="h5"
+                  size="md"
+                  background="blue.300"
+                  rounded="lg"
+                  p="2"
+                >
+                  Silver Sponsors
+                </Heading>
+                <Box>
+                  <Image src="https://via.placeholder.com/250" alt="sponsors" />
+                </Box>
+              </VStack>
+            </GridItem>
+          </Grid>
+        )}
         <Footer />
       </main>
     </Box>
