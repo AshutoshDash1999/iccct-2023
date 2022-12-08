@@ -12,7 +12,7 @@ import {
 function Footer() {
   return (
     <Box mt="2">
-      <Divider/>
+      <Divider size=""/>
       <Flex p="4">
         <Box>
           <Heading as="h2" size="sm">
