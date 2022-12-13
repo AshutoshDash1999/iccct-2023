@@ -8,11 +8,26 @@ import {
   Stack,
   Text,
   Button,
+  SimpleGrid,
+  Center,
+  Image,
 } from "@chakra-ui/react";
 import BaseLayout from "../components/BaseLayout";
-import Image from "next/image";
 import spk1 from "../assets/spk1.jpg";
 import spk2 from "../assets/spk2.jpg";
+
+const speakerData = [
+  {
+    name: "Sarang Mahatwo",
+    location: "New Jersey, USA",
+    imageSrc: spk1.src,
+  },
+  {
+    name: "Prof. Valentina E Balas",
+    location: "Aurel Vlaicu University of Arad, Romania",
+    imageSrc: spk2.src,
+  },
+];
 
 function Keynotespeakers() {
   return (
@@ -20,28 +35,32 @@ function Keynotespeakers() {
       <Heading as="h1" size="3xl">
         Keynote Speakers
       </Heading>
-      <Card maxW="sm">
-        <CardBody>
-          <Image src={spk1} alt="ICCCT Banner" height="400" priority />
-          <Stack mt="6" spacing="3">
-            <Heading size="md">Sarang Mahatwo</Heading>
-            <Text>New Jersey, USA</Text>
-          </Stack>
-        </CardBody>
-        <Divider />
-        <CardFooter></CardFooter>
-      </Card>
-      <Card maxW="sm">
-        <CardBody>
-          <Image src={spk2} alt="ICCCT Banner" height="400" priority />
-          <Stack mt="6" spacing="3">
-            <Heading size="md">Prof. Valentina E Balas</Heading>
-            <Text>Aurel Vlaicu University of Arad, Romania</Text>
-          </Stack>
-        </CardBody>
-        <Divider />
-        <CardFooter></CardFooter>
-      </Card>
+
+      <SimpleGrid
+        spacing={4}
+        templateColumns="repeat(auto-fill, minmax(300px, 1fr))"
+        mt="8"
+      >
+        {speakerData.map((dataItem, index) => (
+          <Card key={index} variant={"filled"}>
+            <CardBody>
+              <Center>
+                <Image
+                  objectFit={"cover"}
+                  rounded={"md"}
+                  height="15rem"
+                  src={dataItem.imageSrc}
+                  alt={dataItem.name}
+                />
+              </Center>
+              <Stack mt="6" spacing="3">
+                <Heading size="md">{dataItem.name}</Heading>
+                <Text>{dataItem.location}</Text>
+              </Stack>
+            </CardBody>
+          </Card>
+        ))}
+      </SimpleGrid>
     </BaseLayout>
   );
 }

@@ -11,9 +11,8 @@ import {
 
 function Footer() {
   return (
-    <Box mt="2">
-      <Divider size=""/>
-      <Flex p="4">
+    <Box m="2" p="4" rounded={"2xl"} backgroundColor={"gray.200"}>
+      <Flex p="4" wrap={"wrap"}>
         <Box>
           <Heading as="h2" size="sm">
             ICCCT-2023
@@ -37,8 +36,12 @@ function Footer() {
 
       <Center>
         <VStack>
-          <Text>Odisha University of Technology and Research (OUTR)</Text>
-          <Text>All Rights Reserved</Text>
+          <Center>
+            <Heading as="h4" size="md">
+              Odisha University of Technology and Research (OUTR)
+            </Heading>
+          </Center>
+          <Center>All Rights Reserved</Center>
         </VStack>
       </Center>
     </Box>

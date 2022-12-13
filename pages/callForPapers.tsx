@@ -1,4 +1,5 @@
 import {
+  Box,
   Button,
   Card,
   CardBody,
@@ -28,33 +29,20 @@ function CallForPapers() {
         encountered and solutions adopted in the fields of Computational
         Techniques and Communication
       </Text>
-      <div>
-        <Grid templateColumns="repeat(2, 1fr)" gap={2}>
-          <GridItem w="100%" h="80">
-            <Text fontSize="xl" mt={6}>
-              <b>Submission of Paper for Doctoral Symposium:</b>
-              There is Doctoral symposium that allows the Masters and PhD
-              students to submit their papers for consideration of best paper
-              award. We are providing two awards of Rs. 10,000/- each for those
-              students. For such papers the students should follow the Doctoral
-              symposium format
-            </Text>
-          </GridItem>
-          <GridItem w="100%" h="80">
-            <Text fontSize="xl" mt={6}>
-              <b>Review and Publication of Manuscripts:</b>
-              The originality, technical correctness, relevance, and quality of
-              presentation of the submitted papers will be evaluated by the TPC
-              members. An accepted paper must be presented at the conference
-              venue by a registered author at the full registration rate. Each
-              full registration covers up to two conference papers authored by
-              the registered author. Accepted and presented papers will be
-              published in the conference Procedia (Applied For)
-            </Text>
-          </GridItem>
-        </Grid>
-      </div>
-      <Card>
+      <Box w="100%">
+        <Text fontSize="xl" mt={6}>
+          <b>Review and Publication of Manuscripts:</b>
+          The originality, technical correctness, relevance, and quality of
+          presentation of the submitted papers will be evaluated by the TPC
+          members. An accepted paper must be presented at the conference venue
+          by a registered author at the full registration rate. Each full
+          registration covers up to two conference papers authored by the
+          registered author. Accepted and presented papers will be published in
+          the conference Procedia (Applied For)
+        </Text>
+      </Box>
+
+      <Card variant={"filled"} mt="10">
         <CardHeader>
           <Heading size="md"> Paper Submission</Heading>
         </CardHeader>
@@ -62,10 +50,14 @@ function CallForPapers() {
           <Text>Click on the button below to submit your paper</Text>
         </CardBody>
         <CardFooter>
-        <Link href='https://easychair.org/account/signin?l=PcXGF3g4ftU2x8lewIu82k' isExternal>
-        <Button colorScheme="blue">Submit</Button> 
-</Link>
-          
+          <Link
+            href="https://easychair.org/account/signin?l=PcXGF3g4ftU2x8lewIu82k"
+            isExternal
+          >
+            <Button variant={"solid"} colorScheme="blue">
+              Submit
+            </Button>
+          </Link>
         </CardFooter>
       </Card>
     </BaseLayout>
