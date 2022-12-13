@@ -63,7 +63,7 @@ function NavItemsGroup() {
         MenuItems={[
           {
             MenuItemName: "Overview",
-            href: "overview",
+            href: "/program/overview",
           },
           {
             MenuItemName: "Keynote Speakers",
