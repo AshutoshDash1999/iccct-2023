@@ -7,7 +7,7 @@ import {
   Heading,
   Stack,
   Text,
-  Button,
+  Button,Grid, GridItem
 } from "@chakra-ui/react";
 import BaseLayout from "../components/BaseLayout";
 import Image from "next/image";
@@ -20,6 +20,7 @@ function Keynotespeakers() {
       <Heading as="h1" size="3xl">
         Keynote Speakers
       </Heading>
+      <Grid templateColumns='repeat(3, 2fr)' gap={5}>
       <Card maxW="sm">
         <CardBody>
           <Image src={spk1} alt="ICCCT Banner" height="400" priority />
@@ -42,6 +43,7 @@ function Keynotespeakers() {
         <Divider />
         <CardFooter></CardFooter>
       </Card>
+      </Grid>
     </BaseLayout>
   );
 }
