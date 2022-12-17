@@ -6,7 +6,7 @@ function NavItemsGroup() {
   const [isMobile] = useMediaQuery("(max-width: 900px)");
 
   return (
-    <Stack direction={isMobile?"column":"row"}>
+    <Stack direction={isMobile ? "column" : "row"}>
       <Link href="/about">
         <Button
           variant="ghost"
@@ -17,89 +17,26 @@ function NavItemsGroup() {
           About
         </Button>
       </Link>
-      <NavLinkButton
-        MenuName="Attend"
-        MenuItems={[
-          {
-            MenuItemName: "Code of Conduct",
-            href: "/codeofconduct",
-          },
-          {
-            MenuItemName: "Why Attend",
-            href: "/whyattend",
-          },
-          {
-            MenuItemName: "Registration",
-            href: "/registration",
-          },
-          {
-            MenuItemName: "Satellite Events",
-            href: "/satelliteevents",
-          },
-          {
-            MenuItemName: "Diversity and Inclusion Scholarship",
-            href: "/diversityandinclusionscholarship",
-          },
-          {
-            MenuItemName: "Bridge to VR",
-            href: "/bridgetovr",
-          },
-          {
-            MenuItemName: "Mentorship Program",
-            href: "/mentorshipprogram",
-          },
-          {
-            MenuItemName: "Virbela Instructions",
-            href: "/virbelainstructions",
-          },
-          {
-            MenuItemName: "Zoom Instructions",
-            href: "/zoominstructions",
-          },
-        ]}
-      />
+      <Link href="/registration">
+        <Button
+          variant="ghost"
+          _hover={{ background: "blue.100" }}
+          colorScheme="blue"
+          color="black"
+        >
+          Registration
+        </Button>
+      </Link>
       <NavLinkButton
         MenuName="Program"
         MenuItems={[
-          {
-            MenuItemName: "Overview",
-            href: "/program/overview",
-          },
           {
             MenuItemName: "Keynote Speakers",
             href: "keynotespeakers",
           },
           {
-            MenuItemName: "Papers",
-            href: "papers",
-          },
-          {
-            MenuItemName: "Workshops",
-            href: "workshops",
-          },
-          {
-            MenuItemName: "Tutorials",
-            href: "tutorials",
-          },
-          {
-            MenuItemName: "Panels",
-            href: "panels",
-          },
-          {
-            MenuItemName: "Posters",
-            href: "posters",
-          },
-          {
-            MenuItemName: "Demos",
-            href: "demos",
-          },
-          {
-            MenuItemName: "Doctoral Consortium",
-            href: "doctoralconsortium",
-          },
-          {
-            MenuItemName: "Social Events",
-            href: "socialevents",
+            MenuItemName: "Important Dates",
+            href: "importantdates",
           },
         ]}
       />
@@ -113,19 +50,6 @@ function NavItemsGroup() {
           Call for Papers
         </Button>
       </Link>
-      <NavLinkButton
-        MenuName="Awards"
-        MenuItems={[
-          {
-            MenuItemName: "VGTC Awards",
-            href: "vgtcawards",
-          },
-          {
-            MenuItemName: "Conference Awards",
-            href: "conferenceawards",
-          },
-        ]}
-      />
       <NavLinkButton
         MenuName="Committees"
         MenuItems={[
@@ -147,27 +71,16 @@ function NavItemsGroup() {
           },
         ]}
       />
-      <NavLinkButton
-        MenuName="Resources"
-        MenuItems={[
-          {
-            MenuItemName: "Slide Templates",
-            href: "slidetemplates",
-          },
-          {
-            MenuItemName: "Zoom Backgrounds",
-            href: "zoombackgrounds",
-          },
-          {
-            MenuItemName: "Banners",
-            href: "banners",
-          },
-          {
-            MenuItemName: "Conference Logos",
-            href: "conferencelogos",
-          },
-        ]}
-      />
+      <Link href="/resources">
+        <Button
+          variant="ghost"
+          _hover={{ background: "blue.100" }}
+          colorScheme="blue"
+          color="black"
+        >
+          Resources
+        </Button>
+      </Link>
     </Stack>
   );
 }

@@ -5,8 +5,6 @@ import {
   CardBody,
   CardFooter,
   CardHeader,
-  Grid,
-  GridItem,
   Heading,
   Link,
   Text,
@@ -51,7 +49,7 @@ function CallForPapers() {
         </CardBody>
         <CardFooter>
           <Link
-            href="https://easychair.org/account/signin?l=PcXGF3g4ftU2x8lewIu82k"
+            href="https://easychair.org/account/signin"
             isExternal
           >
             <Button variant={"solid"} colorScheme="blue">
