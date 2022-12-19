@@ -12,9 +12,9 @@ import {
   Center,
   Image,
 } from "@chakra-ui/react";
-import BaseLayout from "../components/BaseLayout";
-import spk1 from "../assets/spk1.jpg";
-import spk2 from "../assets/spk2.jpg";
+import BaseLayout from "../../components/BaseLayout";
+import spk1 from "../../assets/spk1.jpg";
+import spk2 from "../../assets/spk2.jpg";
 
 const speakerData = [
   {

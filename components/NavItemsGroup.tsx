@@ -32,11 +32,11 @@ function NavItemsGroup() {
         MenuItems={[
           {
             MenuItemName: "Keynote Speakers",
-            href: "keynotespeakers",
+            href: "/program/keynotespeakers",
           },
           {
             MenuItemName: "Important Dates",
-            href: "importantdates",
+            href: "/program/importantdates",
           },
         ]}
       />

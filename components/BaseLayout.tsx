@@ -13,6 +13,7 @@ import Hero from "./Hero";
 import Navbar from "./Navbar";
 import { NextPage } from "next";
 import Head from "next/head";
+import Sponsors from "./Sponsors";
 
 interface Props {
   children?: any;
@@ -34,49 +35,7 @@ const BaseLayout: NextPage<Props> = ({ children }) => {
         {isMobile ? (
           <Box>
             <Box p="4">{children}</Box>
-            <VStack spacing={4}>
-              <Heading as="h3" size="lg">
-                Sponsors
-              </Heading>
-              <Divider border="4px" borderRadius="lg" borderColor="black" />
-              <Heading
-                as="h5"
-                size="md"
-                background="blue.300"
-                rounded="lg"
-                p="2"
-              >
-                Diamond Sponsors
-              </Heading>
-
-              <Box>
-                <Image src="https://via.placeholder.com/250" alt="sponsors" />
-              </Box>
-              <Heading
-                as="h5"
-                size="md"
-                background="blue.300"
-                rounded="lg"
-                p="2"
-              >
-                Gold Sponsors
-              </Heading>
-              <Box>
-                <Image src="https://via.placeholder.com/250" alt="sponsors" />
-              </Box>
-              <Heading
-                as="h5"
-                size="md"
-                background="blue.300"
-                rounded="lg"
-                p="2"
-              >
-                Silver Sponsors
-              </Heading>
-              <Box>
-                <Image src="https://via.placeholder.com/250" alt="sponsors" />
-              </Box>
-            </VStack>
+            <Sponsors/>
           </Box>
         ) : (
           <Grid templateColumns="repeat(8, 1fr)" gap={4} mt="4">
@@ -86,49 +45,7 @@ const BaseLayout: NextPage<Props> = ({ children }) => {
 
             <GridItem colSpan={2} w="100%">
               {/* brand  */}
-              <VStack spacing={4}>
-                <Heading as="h3" size="lg">
-                  Sponsors
-                </Heading>
-                <Divider border="4px" borderRadius="lg" borderColor="black" />
-                <Heading
-                  as="h5"
-                  size="md"
-                  background="blue.300"
-                  rounded="lg"
-                  p="2"
-                >
-                  Diamond Sponsors
-                </Heading>
-
-                <Box>
-                  <Image src="https://via.placeholder.com/250" alt="sponsors" />
-                </Box>
-                <Heading
-                  as="h5"
-                  size="md"
-                  background="blue.300"
-                  rounded="lg"
-                  p="2"
-                >
-                  Gold Sponsors
-                </Heading>
-                <Box>
-                  <Image src="https://via.placeholder.com/250" alt="sponsors" />
-                </Box>
-                <Heading
-                  as="h5"
-                  size="md"
-                  background="blue.300"
-                  rounded="lg"
-                  p="2"
-                >
-                  Silver Sponsors
-                </Heading>
-                <Box>
-                  <Image src="https://via.placeholder.com/250" alt="sponsors" />
-                </Box>
-              </VStack>
+              <Sponsors/>
             </GridItem>
           </Grid>
         )}

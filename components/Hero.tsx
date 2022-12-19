@@ -1,12 +1,11 @@
-import { Center, Flex } from "@chakra-ui/react";
-import Image from "next/image";
+import { Center, Flex, Image } from "@chakra-ui/react";
 import ICCCTBanner from "../assets/iccct-banner.jpg"
 
 function Hero() {
   return (
     <Flex justifyContent="center">
       <Center>
-        <Image src={ICCCTBanner} alt="ICCCT Banner" height="400" priority />
+        <Image objectFit={"cover"} rounded="xl" src={ICCCTBanner.src} alt="ICCCT Banner" height="400" />
       </Center>
     </Flex>
   );
