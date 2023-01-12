@@ -9,9 +9,9 @@ interface CardProps {
 const ResourceCard: NextPage<CardProps> = ({ data }) => {
   return (
     <Link href={data.url} target="_blank">
-      <Card bg={"blue.50"} _hover={{background:"blue.200"}}>
+      <Card bg={"blue.50"} transition="all ease-in-out 0.5s" transitionDuration="0.3s" _hover={{background:"blue.200"}}>
         <CardBody>
-          <Heading>{data.name}</Heading>
+          <Heading as="h3" size='lg'>{data.name}</Heading>
           {/* <Text>{data.name}</Text> */}
         </CardBody>
       </Card>
