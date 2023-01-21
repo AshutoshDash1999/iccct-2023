@@ -1,11 +1,30 @@
-import { Center, Flex, Image } from "@chakra-ui/react";
-import ICCCTBanner from "../assets/iccct-banner.jpg"
+import { Center, Flex, Image, useMediaQuery } from "@chakra-ui/react";
+import ICCCTMobileBanner from "../assets/iccct-banner-mobile.png";
+import ICCCTDesktopBanner from "../assets/iccct-banner-desktop.png";
 
 function Hero() {
+  const [isMobile] = useMediaQuery("(max-width: 945px)");
+
   return (
     <Flex justifyContent="center">
       <Center>
-        <Image objectFit={"cover"} rounded="xl" src={ICCCTBanner.src} alt="ICCCT Banner" height="400" />
+        {isMobile ? (
+          <Image
+            objectFit={"cover"}
+            rounded="xl"
+            src={ICCCTMobileBanner.src}
+            alt="ICCCT Banner"
+            height="300"
+          />
+        ) : (
+          <Image
+            objectFit={"cover"}
+            rounded="xl"
+            src={ICCCTDesktopBanner.src}
+            alt="ICCCT Banner"
+            height="400"
+          />
+        )}
       </Center>
     </Flex>
   );
