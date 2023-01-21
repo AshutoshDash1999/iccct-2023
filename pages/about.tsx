@@ -14,7 +14,7 @@ function About() {
   return (
     <BaseLayout>
       {/* write from here */}
-      <Heading as="h1" size="3xl">
+      <Heading as="h1" size="2xl">
         About the Conference
       </Heading>
       <Box width="70%">

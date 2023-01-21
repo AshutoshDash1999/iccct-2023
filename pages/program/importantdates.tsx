@@ -14,12 +14,12 @@ import BaseLayout from "../../components/BaseLayout";
 const programDatesData = [
   {
     program: "Paper Submission",
-    date: "15 February 2023",
+    date: "15 March 2023",
   },
 
   {
     program: "Final Submission",
-    date: "15 April 2023",
+    date: "31 March 2023",
   },
   {
     program: "Notification of Acceptance",
@@ -27,7 +27,7 @@ const programDatesData = [
   },
   {
     program: "Registration Deadline",
-    date: "15 May 2023",
+    date: "31 May 2023",
   },
   {
     program: "Conference Date",
@@ -43,7 +43,6 @@ function ImportantDates() {
       </Heading>
       <TableContainer mt="4">
         <Table variant="simple">
-          <TableCaption>Important Dates</TableCaption>
           <Thead>
             <Tr>
               <Th>Program</Th>
