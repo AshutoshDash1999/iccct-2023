@@ -7,16 +7,6 @@ function NavItemsGroup() {
 
   return (
     <Stack direction={isMobile ? "column" : "row"}>
-      <Link href="/about">
-        <Button
-          variant="ghost"
-          _hover={{ background: "blue.100" }}
-          colorScheme="blue"
-          color="black"
-        >
-          About
-        </Button>
-      </Link>
       <Link href="/registration">
         <Button
           variant="ghost"
