@@ -13,7 +13,7 @@ export default function Home() {
           </Heading>
           <Box width="70%">
             <Heading as="h4" size="md" my="4">
-              1st International Conference on Communication and Computational
+              International Conference on Communication and Computational
               Techniques (ICCCT-2023)
             </Heading>
           </Box>
@@ -51,7 +51,7 @@ export default function Home() {
               The College is located in the Techno-campus (an area of more than
               100 Acres) at Kalinga Nagar, Bhubaneswar about 2.0 Kms. away from
               Khandagiri-Udayagiri caves. The College was shifted to the new
-              Techno Campus in March, 2001. A full-fledged branch of Syndicate
+              Techno Campus in March, 2001. A full-fledged branch of Canara
               Bank is operating in the college campus. At present, students are
               residing in the Ladies Hostel (KCHR) of 500 capacity and a Boys
               Hostel (RHR) of 500 capacity inside the campus. Boys are also

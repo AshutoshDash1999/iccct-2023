@@ -1,10 +1,10 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import { ChakraProvider } from "@chakra-ui/react";
-import { Nunito } from "@next/font/google";
+import { Quicksand } from "@next/font/google";
 import Head from "next/head";
 
-const nunito = Nunito({ weight: ["400", "700"], subsets: ["latin"] });
+const quicksand = Quicksand({ weight: ["400", "700"], subsets: ["latin"] });
 
 export default function App({ Component, pageProps }: AppProps) {
   // console.log(nunito.className);
@@ -36,7 +36,7 @@ export default function App({ Component, pageProps }: AppProps) {
           content="Odisha University of Technology and Research"
         />
       </Head>
-      <main className={nunito.className}>
+      <main className={quicksand.className}>
         <style jsx global>{`
           h1,
           h2,
@@ -46,7 +46,7 @@ export default function App({ Component, pageProps }: AppProps) {
           h6,
           th,
           tr {
-            font-family: ${nunito.style.fontFamily}!important;
+            font-family: ${quicksand.style.fontFamily}!important;
           }
         `}</style>
         <ChakraProvider>

@@ -32,11 +32,11 @@ const iaCommitteeData = [
     university: "Cleveland State University",
     country: "USA",
   },
-  {
-    name: "Prof. Atulya K. Nagar",
-    university: "Liverpool Hope University",
-    country: "UK",
-  },
+  // {
+  //   name: "Prof. Atulya K. Nagar",
+  //   university: "Liverpool Hope University",
+  //   country: "UK",
+  // },
   {
     name: "Dr. Wang Haoxiang",
     university: "Cornell University",
