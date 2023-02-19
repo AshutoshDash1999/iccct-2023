@@ -1,6 +1,6 @@
 import { Center, Flex, Image, useMediaQuery } from "@chakra-ui/react";
+import ICCCTDesktopBanner from "../assets/iccct-banner-desktop.jpg";
 import ICCCTMobileBanner from "../assets/iccct-banner-mobile.png";
-import ICCCTDesktopBanner from "../assets/iccct-banner-desktop.png";
 
 function Hero() {
   const [isMobile] = useMediaQuery("(max-width: 945px)");
