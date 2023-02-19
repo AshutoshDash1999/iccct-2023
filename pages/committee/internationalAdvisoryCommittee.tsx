@@ -1,13 +1,6 @@
 import {
-  Heading,
-  Table,
-  Thead,
-  Tbody,
-  Tr,
-  Th,
-  Td,
-  TableContainer,
-  Box,
+  Box, Heading,
+  Table, TableContainer, Tbody, Td, Th, Thead, Tr
 } from "@chakra-ui/react";
 import BaseLayout from "../../components/BaseLayout";
 
@@ -32,11 +25,6 @@ const iaCommitteeData = [
     university: "Cleveland State University",
     country: "USA",
   },
-  // {
-  //   name: "Prof. Atulya K. Nagar",
-  //   university: "Liverpool Hope University",
-  //   country: "UK",
-  // },
   {
     name: "Dr. Wang Haoxiang",
     university: "Cornell University",

@@ -22,7 +22,7 @@ function Registration() {
         Registration
       </Heading>
       <Heading as="h4" size="md" my="4">
-        1st International Conference on Communication and Computational
+        International Conference on Communication and Computational
         Techniques (ICCCT-2023)
       </Heading>
       <TableContainer bg="blue.50" mt={10} rounded="lg" shadow={"md"} p="4">

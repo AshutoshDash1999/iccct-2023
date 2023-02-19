@@ -7,7 +7,7 @@ import {
   CardHeader,
   Heading,
   Link,
-  Text,
+  Text
 } from "@chakra-ui/react";
 import BaseLayout from "../components/BaseLayout";
 
@@ -32,11 +32,7 @@ function CallForPapers() {
           <b>Review and Publication of Manuscripts:</b>
           The originality, technical correctness, relevance, and quality of
           presentation of the submitted papers will be evaluated by the TPC
-          members. An accepted paper must be presented at the conference venue
-          by a registered author at the full registration rate. Each full
-          registration covers up to two conference papers authored by the
-          registered author. Accepted and presented papers will be published in
-          the conference Procedia (Applied For)
+          members. Each full registration covers one conference paper presentation and publication by the registered author.
         </Text>
       </Box>
 

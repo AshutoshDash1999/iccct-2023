@@ -1,10 +1,8 @@
 import {
   Box,
   Heading,
-  ListItem,
-  UnorderedList,
-  VStack,
-  StackDivider,
+  ListItem, StackDivider, UnorderedList,
+  VStack
 } from "@chakra-ui/react";
 import BaseLayout from "../../components/BaseLayout";
 
@@ -25,7 +23,7 @@ function ConferenceCommittee() {
           </Heading>
           <UnorderedList>
             <ListItem>
-              Dr. Prashanta Kumar Patra , OSD, OUTR, Bhubaneswar
+              Prof. (Dr.) Bibhuti Bhusan Biswal, Hon&apos;ble VC, OUTR
             </ListItem>
           </UnorderedList>
         </Box>
