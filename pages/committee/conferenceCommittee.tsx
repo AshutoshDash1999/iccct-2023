@@ -1,7 +1,9 @@
 import {
   Box,
   Heading,
-  ListItem, StackDivider, UnorderedList,
+  ListItem,
+  StackDivider,
+  UnorderedList,
   VStack
 } from "@chakra-ui/react";
 import BaseLayout from "../../components/BaseLayout";
@@ -40,6 +42,26 @@ function ConferenceCommittee() {
         </Box>
         <Box>
           <Heading as="h3" size="lg">
+            General Chair
+          </Heading>
+          <UnorderedList>
+            <ListItem>
+              Rati Ranjan Dash, Dean Center for Distance and Continuing Education, OUTR
+            </ListItem>
+          </UnorderedList>
+        </Box>
+        <Box>
+          <Heading as="h3" size="lg">
+            Program Chair
+          </Heading>
+          <UnorderedList>
+            <ListItem>
+              Prof. Atulya K. Nagar, Liverpool Hope University, Liverpool, United Kingdom
+            </ListItem>
+          </UnorderedList>
+        </Box>
+        <Box>
+          <Heading as="h3" size="lg">
             Organising Chair
           </Heading>
           <UnorderedList>
@@ -62,16 +84,14 @@ function ConferenceCommittee() {
           </Heading>
           <UnorderedList>
             <ListItem>
-              Prof. Tapas Kumar Patra , Dept. of E&IE , OUTR,Bhubanewa
+              Prof. P. K. Padhi , Dept. of Civil , OUTR, Bhubaneswar
             </ListItem>
-          </UnorderedList>
-        </Box>
-        <Box>
-          <Heading as="h3" size="lg">
-            General Chair
-          </Heading>
-          <UnorderedList>
-            <ListItem>Prof. Bijaya Ketan Panigrahi, IIT, Delhi</ListItem>
+            <ListItem>
+              Prof. Tapas Kumar Patra , Dept. of E&IE , OUTR, Bhubaneswar
+            </ListItem>
+            <ListItem>
+              Sapna Sarita Swain, Dept. of Planning , OUTR, Bhubaneswar
+            </ListItem>
           </UnorderedList>
         </Box>
         <Box>
