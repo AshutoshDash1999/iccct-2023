@@ -44,20 +44,24 @@ function NavItemsGroup() {
         MenuName="Committees"
         MenuItems={[
           {
+            MenuItemName: "Advisory Committee",
+            href: "/committee/advisoryCommittee",
+          },
+          {
             MenuItemName: "Conference Committee",
             href: "/committee/conferenceCommittee",
           },
           {
-            MenuItemName: "Advisory Committee",
-            href: "/committee/advisoryCommittee",
+            MenuItemName: "International Advisory Committee",
+            href: "/committee/internationalAdvisoryCommittee",
           },
           {
             MenuItemName: "Program Committee",
             href: "/committee/programCommittee",
           },
           {
-            MenuItemName: "International Advisory Committee",
-            href: "/committee/internationalAdvisoryCommittee",
+            MenuItemName: "Publicity Committee",
+            href: "/committee/publicityCommittee",
           },
         ]}
       />
