@@ -7,18 +7,13 @@ import {
   Td,
   Th,
   Thead,
-  Tr,
+  Tr
 } from "@chakra-ui/react";
 import BaseLayout from "../../components/BaseLayout";
 
 const programDatesData = [
   {
-    program: "Paper Submission",
-    date: "15 March 2023",
-  },
-
-  {
-    program: "Final Submission",
+    program: "Final Paper Submission",
     date: "31 March 2023",
   },
   {

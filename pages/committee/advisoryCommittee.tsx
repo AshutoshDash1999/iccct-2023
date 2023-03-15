@@ -1,19 +1,17 @@
 import {
   Heading,
-  Table,
-  Thead,
-  Tbody,
-  Tr,
-  Th,
-  Td,
-  TableContainer,
+  Table, TableContainer, Tbody, Td, Th, Thead, Tr
 } from "@chakra-ui/react";
 import BaseLayout from "../../components/BaseLayout";
 
 const advisoryCommitteeData = [
   {
     name: "Prof. S. Behera",
-    department: "Electrical and Instrumentation Engineer",
+    department: "Dean, SRIC",
+  },
+  {
+    name: "Prof. A.N. Acharya",
+    department: "Dean, Academic Affairs, OUTR",
   },
   {
     name: "Prof. A.Barisal",
@@ -28,8 +26,8 @@ const advisoryCommitteeData = [
     department: "Mechanical Engineering",
   },
   {
-    name: "Prof.R.K.Pradhan",
-    department: "Biotechnology",
+    name: "Prof. R.K. Pradhan",
+    department: "Department of Biotechnology",
   },
   {
     name: "Prof.A.K.Dash",
@@ -37,11 +35,15 @@ const advisoryCommitteeData = [
   },
   {
     name: "Prof. B.P.Dash",
-    department: "Textile Engineering",
+    department: "HoD Textile Engineering",
   },
   {
     name: "Prof. A.N.Acharya",
     department: "Chemistry",
+  },
+  {
+    name: "Prof. P.K. Satpathy",
+    department: "Dean PG Studies & Research, OUTR",
   },
 ];
 
@@ -59,7 +61,7 @@ function AdvisoryCommittee() {
             <Tr>
               <Th>SL.NO</Th>
               <Th>Name</Th>
-              <Th>Department</Th>
+              {/* <Th>Department</Th> */}
             </Tr>
           </Thead>
           <Tbody>
