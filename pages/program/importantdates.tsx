@@ -5,6 +5,7 @@ import {
   TableContainer,
   Tbody,
   Td,
+  Text,
   Th,
   Thead,
   Tr
@@ -12,10 +13,6 @@ import {
 import BaseLayout from "../../components/BaseLayout";
 
 const programDatesData = [
-  {
-    program: "Final Paper Submission",
-    date: "31 March 2023",
-  },
   {
     program: "Notification of Acceptance",
     date: "15 May 2023",
@@ -45,6 +42,13 @@ function ImportantDates() {
             </Tr>
           </Thead>
           <Tbody>
+            <Tr>
+              <Td>Final Paper Submission</Td>
+              <Td>
+                <Text as='del'>31 March 2023</Text>
+                <Text as="span" ml="2">15 April 2023</Text>
+              </Td>
+            </Tr>
             {programDatesData.map((item, index) => (
               <Tr key={index}>
                 <Td>{item.program}</Td>
