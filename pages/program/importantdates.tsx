@@ -46,7 +46,7 @@ function ImportantDates() {
               <Td>Final Paper Submission</Td>
               <Td>
                 <Text as='del'>31 March 2023</Text>
-                <Text as="span" ml="2">15 April 2023</Text>
+                <Text as="span" ml="2">31 April 2023</Text>
               </Td>
             </Tr>
             {programDatesData.map((item, index) => (
