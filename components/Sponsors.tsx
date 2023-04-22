@@ -1,4 +1,5 @@
 import { Box, Divider, Heading, Image, VStack } from "@chakra-ui/react";
+import COEAILabPic from "../assets/coeai-lab.jpg";
 
 export default function Sponsors() {
   return (
@@ -34,8 +35,9 @@ export default function Sponsors() {
       <Box>
         <Image
           rounded="xl"
-          src="https://via.placeholder.com/250"
+          src={COEAILabPic.src}
           alt="sponsors"
+          objectFit="contain"
         />
       </Box>
     </VStack>
