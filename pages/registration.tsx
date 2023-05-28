@@ -1,18 +1,18 @@
-import BaseLayout from "../components/BaseLayout";
 import {
   Box,
+  Divider,
+  Heading,
   Table,
-  Thead,
-  Tbody,
-  Tfoot,
-  Tr,
-  Th,
-  Td,
   TableCaption,
   TableContainer,
-  Heading,
-  Divider,
+  Tbody,
+  Td,
+  Tfoot,
+  Th,
+  Thead,
+  Tr
 } from "@chakra-ui/react";
+import BaseLayout from "../components/BaseLayout";
 
 function Registration() {
   return (
@@ -22,11 +22,11 @@ function Registration() {
         Registration
       </Heading>
       <Heading as="h4" size="md" my="4">
-        International Conference on Communication and Computational
-        Techniques (ICCCT-2023)
+        International Conference on Communication and Computational Techniques
+        (ICCCT-2023)
       </Heading>
       <TableContainer bg="blue.50" mt={10} rounded="lg" shadow={"md"} p="4">
-        <Table variant='simple'>
+        <Table variant="simple">
           <Thead borderBottom="2px" borderColor="gray.200">
             <Tr>
               <Th>PARTICIPANT CATEGORY</Th>
@@ -53,6 +53,45 @@ function Registration() {
           </Tbody>
         </Table>
       </TableContainer>
+
+      <Box>
+        <Heading as="h4" size="md" mt="8" mb="4">
+          Bank Details
+        </Heading>
+
+        <Box>
+          <TableContainer mt={10} rounded="lg" shadow={"md"} p="4">
+            <Table variant="simple">
+              <Tbody>
+                <Tr>
+                  <Td>Account Holder Name:</Td>
+                  <Td>ICCCT 2023</Td>
+                </Tr>
+                <Tr>
+                  <Td>Account Number:</Td>
+                  <Td>110102561871</Td>
+                </Tr>
+                <Tr>
+                  <Td>Branch Name:</Td>
+                  <Td>CET CAMPUS, BHUBANESWAR</Td>
+                </Tr>
+                <Tr>
+                  <Td>Branch Address:</Td>
+                  <Td>
+                    <div> CANARA BANK, COLLEGE OF ENGINEERING AND TECHNOLOGY,</div> 
+                    <div>GHATIKIA, KALINGANAGAR, BHUBANESWAR</div> 
+                    <div>PIN: 751003</div> 
+                  </Td>
+                </Tr>
+                <Tr>
+                  <Td>IFSC Code:</Td>
+                  <Td>CNRB0018017</Td>
+                </Tr>
+              </Tbody>
+            </Table>
+          </TableContainer>
+        </Box>
+      </Box>
     </BaseLayout>
   );
 }
