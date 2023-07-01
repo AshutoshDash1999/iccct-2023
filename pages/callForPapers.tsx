@@ -1,13 +1,15 @@
 import {
-  Box,
-  Button,
-  Card,
-  CardBody,
-  CardFooter,
-  CardHeader,
-  Heading,
-  Link,
-  Text
+    Alert,
+    AlertIcon,
+    Box,
+    Button,
+    Card,
+    CardBody,
+    CardFooter,
+    CardHeader,
+    Heading,
+    Link,
+    Text
 } from "@chakra-ui/react";
 import BaseLayout from "../components/BaseLayout";
 
@@ -32,8 +34,19 @@ function CallForPapers() {
           <b>Review and Publication of Manuscripts:</b>
           The originality, technical correctness, relevance, and quality of
           presentation of the submitted papers will be evaluated by the TPC
-          members. Each full registration covers one conference paper presentation and publication by the registered author.
+          members. Each full registration covers one conference paper
+          presentation and publication by the registered author.
         </Text>
+      </Box>
+
+      <Box my="4">
+        <Alert status="info" variant="left-accent" borderRadius="md">
+          <AlertIcon />
+          <Text as='b'>
+            After conference proceedings will be published in the Taylor
+            and Francis series.
+          </Text>
+        </Alert>
       </Box>
 
       <Card variant={"filled"} mt="10">
@@ -44,10 +57,7 @@ function CallForPapers() {
           <Text>Click on the button below to submit your paper</Text>
         </CardBody>
         <CardFooter>
-          <Link
-            href="https://easychair.org/account/signin"
-            isExternal
-          >
+          <Link href="https://easychair.org/account/signin" isExternal>
             <Button variant={"solid"} colorScheme="blue">
               Submit
             </Button>
