@@ -1,14 +1,14 @@
 import {
-  Heading,
-  Table,
-  TableCaption,
-  TableContainer,
-  Tbody,
-  Td,
-  Text,
-  Th,
-  Thead,
-  Tr
+    Heading,
+    Table,
+    TableCaption,
+    TableContainer,
+    Tbody,
+    Td,
+    Text,
+    Th,
+    Thead,
+    Tr
 } from "@chakra-ui/react";
 import BaseLayout from "../../components/BaseLayout";
 
@@ -46,7 +46,7 @@ function ImportantDates() {
               <Td>Final Paper Submission</Td>
               <Td>
                 <Text as='del'>31 March 2023</Text>
-                <Text as="span" ml="2">31 April 2023</Text>
+                <Text as="span" ml="2">30 April 2023</Text>
               </Td>
             </Tr>
             {programDatesData.map((item, index) => (
