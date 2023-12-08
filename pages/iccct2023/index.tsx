@@ -1,16 +1,7 @@
-import {
-  Heading,
-  Table,
-  TableContainer,
-  Tbody,
-  Td,
-  Text,
-  Th,
-  Thead,
-  Tr,
-} from "@chakra-ui/react";
+import { Heading } from "@chakra-ui/react";
 import BaseLayout from "../../components/BaseLayout";
 import presentedPaperDetails from "./presentedPaperDetails.json";
+import style from "./style";
 
 const ICCCT2023 = () => {
   return (
@@ -19,30 +10,30 @@ const ICCCT2023 = () => {
         ICCCT 2023 Paper Presentation Details
       </Heading>
 
-      <TableContainer mt="4">
-        <Table variant="striped" size="md">
-          <Thead>
-            <Tr>
-              <Th>Paper ID</Th>
-              <Th>Paper Title</Th>
-              <Th>Name of Authors</Th>
-              <Th>Name of Presenting Author</Th>
-              <Th>Name of Organisation</Th>
-            </Tr>
-          </Thead>
-          <Tbody>
-            {presentedPaperDetails.map((item) => (
-              <Tr key={item?.["Paper ID"]}>
-                <Td>{item["Paper ID"]}</Td>
-                <Td wordBreak={"break-word"}>{item["Paper Title"]}</Td>
-                <Td wordBreak={"break-word"}>{item["Name of Authors"]}</Td>
-                <Td>{item["Name of Presenting Author"]}</Td>
-                <Td>{item["Name of Organisation"]}</Td>
-              </Tr>
-            ))}
-          </Tbody>
-        </Table>
-      </TableContainer>
+      <table style={style.table}>
+        <thead>
+          <tr>
+            <th style={style.table__head__paperId}>Paper ID</th>
+            <th>Paper Title</th>
+            <th>Name of Authors</th>
+            <th>Name of Presenting Author</th>
+            <th>Name of Organisation</th>
+          </tr>
+        </thead>
+        <tbody>
+          {presentedPaperDetails.map((item) => (
+            <tr key={item?.["Paper ID"]}>
+              <td style={{ textAlign: "center" }}>{item["Paper ID"]}</td>
+              <td>{item["Paper Title"]}</td>
+              <td>{item["Name of Authors"]}</td>
+              <td className="table__data__presenting__author">
+                {item["Name of Presenting Author"]}
+              </td>
+              <td>{item["Name of Organisation"]}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </BaseLayout>
   );
 };
