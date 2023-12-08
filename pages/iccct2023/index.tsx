@@ -10,10 +10,17 @@ const ICCCT2023 = () => {
         ICCCT 2023 Paper Presentation Details
       </Heading>
 
-      <table style={style.table}>
+      <table
+        style={{
+          margin: "10px 0 10px 0",
+          borderSpacing: "30px 60px",
+          borderCollapse: "collapse",
+          width: "100%",
+        }}
+      >
         <thead>
           <tr>
-            <th style={style.table__head__paperId}>Paper ID</th>
+            <th style={{ width: "50px", textAlign: "center" }}>Paper ID</th>
             <th>Paper Title</th>
             <th>Name of Authors</th>
             <th>Name of Presenting Author</th>
