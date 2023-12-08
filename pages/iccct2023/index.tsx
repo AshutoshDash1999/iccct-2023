@@ -1,7 +1,16 @@
 import { Heading } from "@chakra-ui/react";
 import BaseLayout from "../../components/BaseLayout";
 import presentedPaperDetails from "./presentedPaperDetails.json";
-import style from "./style";
+
+const style = {
+  table__head__paperId: {
+    width: "50px",
+    textAlign: "center",
+  },
+  table__data__paperId: {
+    textAlign: "center",
+  },
+};
 
 const ICCCT2023 = () => {
   return (
