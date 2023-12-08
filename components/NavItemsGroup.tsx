@@ -75,6 +75,16 @@ function NavItemsGroup() {
           Resources
         </Button>
       </Link>
+      <Link href="/iccct2023">
+        <Button
+          variant="ghost"
+          _hover={{ background: "blue.100" }}
+          colorScheme="blue"
+          color="black"
+        >
+          ICCCT 2023
+        </Button>
+      </Link>
     </Stack>
   );
 }
